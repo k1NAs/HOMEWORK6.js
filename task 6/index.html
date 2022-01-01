@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<input type="text" id="input1" value="Text1">
+	<input type="text" id="input2" value="Text2">
+
+	<script>
+		let firstInput = prompt("enter value for the first input");
+		let secondInput = prompt("enter value for the second input");
+
+		document.querySelector('#input1').value = firstInput;
+		document.querySelector('#input2').value = secondInput;
+
+		let changeValues = function () {
+			document.querySelector('#input1').value = secondInput;
+			document.querySelector('#input2').value = firstInput;
+		};
+		changeValues(firstInput, secondInput);
+
+	</script>
+
+
+</body>
+
+</html>
